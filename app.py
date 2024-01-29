@@ -6,7 +6,7 @@ import xgboost as xgb
 st.set_page_config(page_icon="🦰")
 
 # Load the saved XGBoost model
-xgb_model = pickle.load(open('liver_3.pkl', 'rb'))
+xgb_model = pickle.load(open('liver.pkl', 'rb'))
 
 # List of features that you used during training
 trained_features = ['Age of the patient', 'Gender of the patient', 'Total Bilirubin', 'Direct Bilirubin',
